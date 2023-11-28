@@ -33,7 +33,7 @@ public class MyWorld extends World
         addObject(nameLabel, 300, 100);
 
         // Score throughtout game.
-        Label scoreLabel = new Label(0, 80);
+        scoreLabel = new Label(0, 80);
         addObject(scoreLabel, 50, 50);
 
         // Create the banana.
@@ -46,7 +46,7 @@ public class MyWorld extends World
     public void increaseScore()
     {
         score++;
-        // scoreLabel.setValue(score);
+        scoreLabel.setValue(score);
     }
 
     /**
